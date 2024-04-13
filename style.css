@@ -1,0 +1,579 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #F8F7F6;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 5%;
+  background: #F8F7F6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: .3s;
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .nav a {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  margin-left: 5rem;
+  transition: .2s;
+}
+
+.home {
+  width: 100%;
+  padding: 10rem 9%;
+  background-image: url(../CSS/assets/image.svg);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: right;
+  background-position: right top;
+  overflow: hidden;
+}
+
+.landingpage {
+  height: 300px;
+  width: 100%;
+  margin: auto;
+  padding: 3rem 9%;
+}
+
+.head {
+  font-size: 32px;
+  margin-bottom: 10px;
+  margin-left: -20px;
+}
+
+.name {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.desc {
+  font-size: 18px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  max-height: 150px;
+}
+
+.tombol {
+  background-color: #341D08;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.about h2 {
+  font-size: 24px;
+}
+
+.about p {
+  font-size: 18px;
+  max-height: 200px;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  gap: 50px;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.box1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.box2 {
+  width: 350px;
+  height: 200px;
+  background-color: transparent;
+}
+
+.box3 {
+  width: 300px;
+  height: 200px;
+  background-color: transparent;
+}
+
+/* my skill */
+.judul {
+  text-align: center;
+  width: 150px;
+  margin: auto;
+  background-color: #341D08;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.myskill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  gap: 50px;
+}
+
+.piton {
+  width: 200px;
+  height: 200px;
+  border-top: 10px solid #BFA179;
+  background-color: whitesmoke;
+  filter: drop-shadow();
+  overflow: hidden;
+}
+
+.piton img {
+  height: 50px;
+  width: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.figma {
+  width: 200px;
+  height: 200px;
+  background-color: whitesmoke;
+  border-top: 10px solid #B9B0A7;
+  filter: drop-shadow();
+  overflow: hidden;
+}
+
+.figma img {
+  height: 50px;
+  width: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.flutter {
+  width: 200px;
+  height: 200px;
+  background-color: whitesmoke;
+  border-top: 10px solid #8B7966;
+  filter: drop-shadow();
+  overflow: hidden;
+}
+
+.flutter img {
+  height: 50px;
+  width: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.office {
+  width: 200px;
+  height: 200px;
+  background-color: whitesmoke;
+  border-top: 10px solid #3A2511;
+  filter: drop-shadow();
+  overflow: hidden;
+}
+
+.office img {
+  height: 50px;
+  width: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+/* my portofolio */
+.mocut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 400px;
+  gap: 10px;
+  border: 2px solid #B9B0A7;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ftmocut {
+  width: 400px;
+  height: 400px;
+  background-color: transparent;
+  align-content: center;
+  display: block;
+}
+
+.ftmocut img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 12px;
+}
+
+.descmocut {
+  width: 400px;
+  height: 400px;
+  text-align: justify;
+  background-color: transparent;
+  text-align: center;
+  align-content: center;
+}
+
+.monocafe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 400px;
+  gap: 10px;
+  border: 2px solid #B9B0A7;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 12px;
+
+}
+
+.ftmono {
+  width: 400px;
+  height: 400px;
+  align-content: center;
+  overflow: hidden;
+}
+
+.ftmono img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 12px;
+}
+
+.descmono {
+  width: 400px;
+  height: 400px;
+  text-align: justify;
+  background-color: transparent;
+  text-align: center;
+  align-content: center;
+}
+
+.tukanganak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 400px;
+  gap: 10px;
+  border: 2px solid #B9B0A7;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 12px;
+}
+
+.ftta {
+  width: 400px;
+  height: 400px;
+  background-color: transparent;
+  align-content: center;
+  display: block;
+  overflow: hidden;
+}
+
+.ftta img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 12px;
+}
+
+.descta {
+  width: 400px;
+  height: 400px;
+  text-align: justify;
+  background-color: transparent;
+  text-align: center;
+  align-content: center;
+}
+
+/* testimony */
+.testi {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 250px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 12px;
+  background-color: #B9B0A7;
+}
+
+.identitas {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.identitas img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.identitas span {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.komen {
+  max-width: 550px;
+  margin-left: 40px;
+
+}
+
+.panah {
+  margin-left: 90%;
+  font-weight: bold;
+}
+
+/* why me dan contact */
+.wc {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 400px;
+  gap: 250px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 12px;
+}
+
+.whyme {
+  max-width: 450px;
+}
+
+.send {
+  float: inline-end;
+  text-align: center;
+  background-color: #341D08;
+  color: white;
+  width: 50px;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  gap: 30px;
+  background-color: #B9B0A7;
+  margin: auto;
+  justify-content: center;
+}
+
+.perusahaan {
+  margin-right: 700px;
+}
+
+.perusahaan img {
+  height: auto;
+  width: 80px;
+  margin-left: 20px;
+  display: block;
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menu-icon {
+    display: inline-block;
+  }
+
+  .navbar .nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: white;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navbar .nav.active {
+    right: 0;
+  }
+
+  .navbar .nav a {
+    display: block;
+    margin: 1.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #efefef;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .tombol {
+    display: none;
+  }
+
+  .mocut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    gap: 10px;
+    border: 2px solid #B9B0A7;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .ftmocut {
+    width: 250px;
+    height: 250px;
+    background-color: transparent;
+    align-content: center;
+    display: block;
+  }
+
+  .ftmocut img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 12px;
+  }
+
+  .descmocut {
+    width: 250px;
+    height: 250px;
+    text-align: justify;
+    background-color: transparent;
+    text-align: center;
+    align-content: center;
+  }
+
+  .monocafe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    gap: 10px;
+    border: 2px solid #B9B0A7;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 12px;
+
+  }
+
+  .ftmono {
+    width: 250px;
+    height: 200px;
+    align-content: center;
+    overflow: hidden;
+  }
+
+  .ftmono img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 12px;
+  }
+
+  .descmono {
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+    background-color: transparent;
+    text-align: center;
+    align-content: center;
+  }
+
+  .tukanganak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    gap: 10px;
+    border: 2px solid #B9B0A7;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 12px;
+  }
+
+  .ftta {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    align-content: center;
+    display: block;
+    overflow: hidden;
+  }
+
+  .ftta img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 12px;
+  }
+
+  .descta {
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+    background-color: transparent;
+    text-align: center;
+    align-content: center;
+  }
+}
